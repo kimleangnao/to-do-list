@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icons/favicon_16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="./icons/favicon_32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="./icons/favicon_48x48.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="./icons/favicon_64x64.png" sizes="64x64" type="image/png">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="./index.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="body">
+        <img src="./icons/icon_100x100.png" class="image" />
+        <h1 class="pageTitle">Step By Step</h1>
+        <section class="displayTasks">
+            <div  id="js_displayTasks" class="displayTasks_list">
+                
+            </div>
+            <!-- 
+            <div class="displayTasks_bar">
+                <div class="displayTasks_bar_checkBtn">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="displayTasks_bar_text">
+                    5K run
+                </div>
+                <div class="displayTasks_bar_deleteBtn">
+                    <i class="fa-solid fa-trash"></i>
+                </div>
+            </div>
+            -->
+            <div id="js_displayEmpty" class="displayEmpty">
+                <p>Your to-do list is empty.</p>
+                <p>Add some tasks to get your day started.</p>
+                <img src="./icons/icon_100x100.png" class="displayEmpty_image" />
+            </div>
+    
+        </section>
+        <form class="form" action="#">
+            <input type="text" id="js_formInput" class="form_inputText" placeholder="Adding task here..." />
+            <input type="submit" id="js_submitBtn" value="ADD"  class="form_submitBtn" />
+        </form>
+    </div>
+    
+
+    <script src="./index.js"></script>
+</body>
+</html>
